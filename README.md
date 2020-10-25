@@ -9,6 +9,6 @@
 
 Так же в проекте использовалась техноглогия flex.
 
-Ссылка на сайт в GitHub:
+Ссылка на сайт в GitHub : https://andrey-su.github.io/mesto/
   
 
