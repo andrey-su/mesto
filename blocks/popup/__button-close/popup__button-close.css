@@ -8,8 +8,14 @@
     border: none;
     position: absolute;
     top:-40px;
-    right: -40px;;
+    right: -40px;
+    transition: .5s ease;
+    cursor: pointer;
 }
+
+.popup__button-close:hover {
+    opacity: .6;
+    }
 
 
 @media screen and (max-width:767px) {

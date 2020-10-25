@@ -1,8 +1,7 @@
 .profile__info {
     width: 336px;
-    /*max-height: 77px;*/
+    max-height: 77px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-left: 25px;
 }
@@ -18,5 +17,6 @@
        margin:10.25px 0 0;
        max-width: 99.29%;
        justify-content: center;
+       
    }
 }
