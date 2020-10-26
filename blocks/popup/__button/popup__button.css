@@ -7,9 +7,10 @@
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+    border: none;
     border-radius: 2px;
-    /*margin: 48px auto 0;*/
-    margin:0 auto;
+    display: block;
+    margin: 48px auto 0;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -24,6 +25,6 @@
        min-height: 46px;
        line-height: 16.94px;
        font-size: 14px;
-       /*margin-top: 45px;*/
+       margin-top: 45px;
       }
 }

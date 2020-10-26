@@ -1,8 +1,7 @@
-.popup__form {
-    height: 70%;
+/*.popup__form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
 /*.popup__forms {
@@ -23,7 +22,6 @@
 
 @media screen and (max-width:767px) {
     .popup__form {
-        padding-top: 60px;
         height: 80%;
       }
     }

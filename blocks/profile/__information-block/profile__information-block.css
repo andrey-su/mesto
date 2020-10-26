@@ -13,7 +13,6 @@
 
 @media screen and (max-width:767px) {
     .profile__information-block {
-       max-width: 100%;
        flex-direction: column;
    }
 }

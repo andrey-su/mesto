@@ -11,7 +11,7 @@
 <body class="body">
     <div class="page">
         <header class="header">
-            <img src="images/logo/Logo.png" alt="логотип сайта место" class="header__logo">
+            <img src="images/logo/Logo.svg" alt="логотип сайта место" class="header__logo">
         </header>
 
         <main>
@@ -21,11 +21,11 @@
                 <div class="profile__info">
                     <h1 class="profile__title">Жак-Ив Кусто</h1>
                     
-                    <button class="profile__button"></button>
+                    <button aria-label="кнопнка для редактирования профиля" type="button" class="profile__button"></button>
                     <p class="profile__subtitle">Исследователь океана</p>
                     </div>
             </div>
-                <button class="profile__add-button"></button>
+                <button type="button" class="profile__add-button"></button>
             </section>
 
             <section class="elements">
@@ -33,42 +33,42 @@
                         <img src="images/kirill-pershin-1088404-unsplash.png" alt="фото города Карачаевск" class="elements__card-image">
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Карачаевск</h2>
-                        <button class="elements__card-button"></button>
+                        <button type="button" class="elements__card-button"></button>
                     </div>
                     </article>
                     <article class="elements__card">
                         <img src="images/kirill-pershin-1404681-unsplash.png" alt="фото горы Эльбрус" class="elements__card-image">
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Гора Эльбрус</h2>
-                        <button class="elements__card-button"></button>
+                        <button type="button" class="elements__card-button"></button>
                     </div>
                     </article>
                     <article class="elements__card">
                         <img src="images/kirill-pershin-1556355-unsplash.png" alt="фото гор Домбай" class="elements__card-image">
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Домбай</h2>
-                        <button class="elements__card-button"></button>
+                        <button type="button" class="elements__card-button"></button>
                     </div>
                     </article>
                     <article class="elements__card">
                         <img src="images/kirill-pershin-1404681-unsplash.png" alt="фото горы Эльбрус" class="elements__card-image">
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Гора Эльбрус</h2>
-                        <button class="elements__card-button"></button>
+                        <button type="button" class="elements__card-button"></button>
                     </div>
                   </article>
                     <article class="elements__card">
                         <img src="images/kirill-pershin-1556355-unsplash.png" alt="фото гор Домбай" class="elements__card-image">
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Домбай</h2>
-                        <button class="elements__card-button"></button>
+                        <button type="button" class="elements__card-button"></button>
                     </div>
                     </article>
                     <article class="elements__card">
                         <img src="images/kirill-pershin-1088404-unsplash.png" alt="фото Республики Карачаево-Черкесия" class="elements__card-image">
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Карачаево-Черкесия</h2>
-                        <button class="elements__card-button"></button>
+                        <button type="button" class="elements__card-button"></button>
                     </div>
                     </article>
             
@@ -83,7 +83,7 @@
 <section class="popup">
     <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form">
+        <form class="popup__form" name="popupForm">
            <input type="text"  value="" placeholder="имя" class="popup__input popup__input_type_name" name="profileName">
            <input type="text" value="" placeholder="о себе" class="popup__input popup__input_type_activity" name="profileStatus">
            <button class="popup__button" type="submit">Сохранить</button>
