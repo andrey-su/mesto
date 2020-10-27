@@ -14,33 +14,35 @@ let inputActivity = popup.querySelector('.popup__input_type_activity');
 // функция открытия попапа
 function showPopup() {
   popup.classList.add('popup_opened');
+  
   inputName.value = profileTitle.textContent;
   inputActivity.value = profileSubtitle.textContent;
 /*popup.removeEventListener('click', showPopup);*/
 }
 
-//отлежиивание события клика для открытия popup
-buttonOpenPopup.addEventListener('click', showPopup);
+
   
 // функция закрытия попапа
 function closePopup() {
   popup.classList.remove('popup_opened');
 }
 
-// отлежиивание события клика для закрытия popup
-popupCloseButton.addEventListener('click', closePopup);
-
 
 //функция  для заммены  текста 
 function formSubmitHandler(event) {
   event.preventDefault();
-  closePopup();
-
+  
   profileTitle.textContent = inputName.value;
   profileSubtitle.textContent = inputActivity.value;
+
+  closePopup();
 }
 
+//отлежиивание события клика для открытия popup
+buttonOpenPopup.addEventListener('click', showPopup);
 
+// отлежиивание события клика для закрытия popup
+popupCloseButton.addEventListener('click', closePopup);
 
 //обработчик событий
 formElement.addEventListener('submit', formSubmitHandler);
