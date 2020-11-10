@@ -18,10 +18,18 @@
 
 
 
-@media screen and (max-width:767px) {
+/*@media screen and (max-width:767px) {
     .popup__container {
        max-width: 88.13%;
        padding-top: 25px;
        padding-bottom: 25px;
       }
-}
+}*/
+
+@media screen and (max-width:767px) {
+    .popup__container {
+        max-width: 75%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    }

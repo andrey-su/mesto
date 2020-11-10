@@ -1,0 +1,17 @@
+.popup__name-place {
+    max-width: 291px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color:white;
+    margin:10px 0 0;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+@media screen and (max-width:767px) {
+    .popup__name-place {
+        max-width: 240px;
+    }
+    }

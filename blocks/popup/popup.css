@@ -9,7 +9,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
-    display: none;
+    z-index: 3;
+    /*display: none;*/
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 5s, opacity .5s linear;
 }
 

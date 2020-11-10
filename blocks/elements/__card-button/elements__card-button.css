@@ -9,9 +9,10 @@
     padding:0;
     background-size: contain;
     cursor: pointer;
+    transition: .5s ease;
 }
 
 .elements__card-button:hover {
-    transform: scale(1.1);
+    opacity: .5;
 }
 

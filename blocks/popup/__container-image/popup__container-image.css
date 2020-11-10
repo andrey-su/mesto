@@ -1,0 +1,14 @@
+.popup__container-image{
+    font-family: 'Inter', arial, sans-serif;
+    max-width: 75vw;
+    max-height: 75vh;
+    position: relative;
+    z-index: 2;
+    
+}
+
+@media screen and (max-width:767px) {
+    .popup__container-image {
+        max-width: 75%;
+    }
+    }

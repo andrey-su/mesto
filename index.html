@@ -29,8 +29,9 @@
             </section>
 
             <section class="elements">
-                <article class="elements__card">
+                <!-- <article class="elements__card">
                         <img src="images/kirill-pershin-1088404-unsplash.png" alt="фото города Карачаевск" class="elements__card-image">
+                        <button class="elements__card-button-delite" type="button"></button>
                         <div class="elements__card-information-block">
                         <h2 class="elements__card-title">Карачаевск</h2>
                         <button type="button" class="elements__card-button"></button>
@@ -70,8 +71,9 @@
                         <h2 class="elements__card-title">Карачаево-Черкесия</h2>
                         <button type="button" class="elements__card-button"></button>
                     </div>
-                    </article>
+                    </article> -->
             
+
             </section>
 </main>
 
@@ -80,8 +82,8 @@
 </footer>
 </div>
 
-<section class="popup">
-    <div class="popup__container">
+<section class="popup popup_type_user">
+  <div class="popup__container">
         <h2 class="popup__title">Редактировать профиль</h2>
         <form class="popup__form" name="popupForm">
            <input type="text"  value="" placeholder="имя" class="popup__input popup__input_type_name" name="profileName">
@@ -90,9 +92,41 @@
          </form>
          <button class="popup__button-close" type="button"></button>
     </div>
+</section>
+
+<section class="popup popup_type_add-card">
+    <div class="popup__container">
+        <h2 class="popup__title">Новое место</h2>
+        <form class="popup__form popup__form-place" name="popupForm">
+           <input type="text"  value="" placeholder="Название" class="popup__input popup__input_type_place-name" name="profileName">
+           <input type="text" value="" placeholder="Ссылка на картинку" class="popup__input popup__input_type_link" name="profileStatus">
+           <button class="popup__button popup__button-add-card" type="submit">Создать</button>
+         </form>
+         <button class="popup__button-close" type="button"></button>
+    </div>
+</section>
+
+    <section class="popup popup_type_image">
+        <div class="popup__container-image">
+            <img src="#" class="popup__image" alt="#">
+            <p class="popup__name-place"></p>
+            <button class="popup__button-close" type="button"></button>
+        </div>
     </section>
 
-    <script src="scripts/index.js"></script>
+    <template id="element__card">
+        <article class="elements__card">
+        <img src="#" alt="#" class="elements__card-image">
+        <button class="elements__card-button-delite" type="button"></button>
+        <div class="elements__card-information-block">
+        <h2 class="elements__card-title"></h2>
+        <button type="button" class="elements__card-button"></button>
+    </div>
+    </article>   
+</template>
+
+
+<script src="scripts/index.js"></script>
 </body>
 
 </html>
