@@ -16,11 +16,11 @@ const addCardCloseButton = popupTypeAddCard.querySelector('.popup__button-close'
 const typeImageCloseButton = popupTypeImage.querySelector('.popup__button-close')
 
 //переменные для написания текста в формах
-let formElement = popup.querySelector('.popup__form');
-let profileTitle = document.querySelector('.profile__title');
-let profileSubtitle = document.querySelector('.profile__subtitle');
-let inputName = popup.querySelector('.popup__input_type_name');
-let inputActivity = popup.querySelector('.popup__input_type_activity');
+const formElement = popup.querySelector('.popup__form');
+const profileTitle = document.querySelector('.profile__title');
+const profileSubtitle = document.querySelector('.profile__subtitle');
+const inputName = popup.querySelector('.popup__input_type_name');
+const inputActivity = popup.querySelector('.popup__input_type_activity');
 
 //перменная для вставки данных в template
 const elements = document.querySelector('.elements')
@@ -34,16 +34,17 @@ const inputTypeLink = document.querySelector('.popup__input_type_link');
 const popupButtonAddCard = document.querySelector('.popup__button-add-card');
 const openPupupBigImg = document.querySelector('.popup__image');
 const popupNamePlace = document.querySelector('.popup__name-place');
+const tamplate = document.querySelector('#element__card')
 
 //функция дублирования информации  из секции  profile  в popup по редактирванию профиля
 function openProfilePopup() {
 inputName.value = profileTitle.textContent;
 inputActivity.value = profileSubtitle.textContent;
-/*showPopup(popup);*/
+showPopup(popupTypeUser);
 }
 
 // вызов функции openProfilePopup для вставки текста в popup для редактирвания профиля
-openProfilePopup(showPopup)
+/*openProfilePopup(showPopup);*/
 
 // функция открытия попапа
 function showPopup(popup) {
@@ -76,7 +77,8 @@ function openImagePopup(src, alt, caption) {
 }
 
 //отлежиивание события клика для открытия popup
-buttonOpenPopup.addEventListener('click', () => showPopup(popupTypeUser));
+/*buttonOpenPopup.addEventListener('click', () => showPopup(popupTypeUser));*/
+buttonOpenPopup.addEventListener('click', () => showPopup(openProfilePopup()));
 profileAddButton.addEventListener('click', () => showPopup(popupTypeAddCard));
 /*elementsCardImage.addEventListener('click', () => showPopup(popupTypeImage));*/
 
@@ -122,7 +124,7 @@ const initialCards = [
 
 // функция создания карточки с фотографией и текстом в template
 function createCard(data) {
-  const elementCard = document.querySelector('#element__card').content;
+  const elementCard = tamplate.content;
   const copyCard = elementCard.cloneNode(true);
   copyCard.querySelector('.elements__card-image').src = data.link; 
   copyCard.querySelector('.elements__card-title').textContent = data.name;
@@ -156,17 +158,6 @@ elementsCardImage.addEventListener('click', () => openImagePopup(data.link, data
   });
 
  
- 
-
-   // функция по добавлению новой карточки через popup
-  function addCard(data) {
-    const elementCard = document.querySelector('#element__card').content;
-    const copyCard = elementCard.cloneNode(true);
-    copyCard.querySelector('.popup__input_type_link').src = data.link; 
-    copyCard.querySelector('.popup__input_type_place-name').textContent = data.name;
-    return copyCard;
-  }
-
     popupTypeAddCard.addEventListener('submit', event => {
     event.preventDefault();
     const elementsPopup = {
@@ -187,11 +178,15 @@ elementsCardImage.addEventListener('click', () => openImagePopup(data.link, data
    
   
 
-
+// функция по добавлению новой карточки через popup
+  /*function addCard(data) {
+    const elementCard = document.querySelector('#element__card').content;
+    const copyCard = elementCard.cloneNode(true);
+    copyCard.querySelector('.popup__input_type_link').src = data.link; 
+    copyCard.querySelector('.popup__input_type_place-name').textContent = data.name;
+    return copyCard;
+  }*/
   
-
-
- 
 
 
 /*function addCardUser(event) {
