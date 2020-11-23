@@ -1,0 +1,9 @@
+.popup__button_no-active {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.popup__button_no-active:hover {
+    background-color: #ffffff;
+}
