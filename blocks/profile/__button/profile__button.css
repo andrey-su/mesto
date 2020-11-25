@@ -8,9 +8,10 @@
     background-repeat: no-repeat;
     border: 1px solid #FFFFFF;
     cursor: pointer;
-    align-self: flex-end;
+    align-self: flex-start;
     transition: .5s ease;
-    margin-left: 18px;
+    /*margin-left: 18px;*/
+    margin: 20px 0 0 18px;
 }
 
 .profile__button:hover {
