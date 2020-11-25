@@ -156,7 +156,7 @@ function createCard(data) {
   copyCard.querySelector('.elements__card-title').textContent = data.name;
   
   // код для кнопки удаления карточек
-  copyCard.querySelector('.elements__card-button-delite').addEventListener('click', event => {
+  copyCard.querySelector('.elements__card-button-delite').addEventListener('click', (event) => {
   const popupTarget = event.target.closest('.elements__card')
   if(popupTarget) {
     popupTarget.remove()
@@ -164,7 +164,7 @@ function createCard(data) {
   });
 
   //код кнопки лайк
-  copyCard.querySelector('.elements__card-button').addEventListener('click', function(event) {
+  copyCard.querySelector('.elements__card-button').addEventListener('click', (event) => {
   event.target.classList.toggle('elements__card-button_active');
 });
 
