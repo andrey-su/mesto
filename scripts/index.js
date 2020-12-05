@@ -6,7 +6,7 @@ const profileAddButton = document.querySelector('.profile__add-button');
 
 //переменные для каждого попапа
 const popupTypeUser = document.querySelector('.popup_type_user');
-const popupTypeAddCard = document.querySelector('.popup_type_add-card')
+const popupTypeAddCard = document.querySelector('.popup_type_add-card');
 const popupTypeImage = document.querySelector('.popup_type_image');
 
 
